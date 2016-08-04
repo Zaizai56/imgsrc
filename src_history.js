@@ -1,10 +1,8 @@
 var express = require("express");
-var app = express();
+var router = express.Router();
 var mongo = require('mongodb').MongoClient;
 
-var port = process.env.PORT || 8080; // set our port
-
-app.use(function(req, res){
+router.use(function(req, res){
     console.log("history lookup");
     mongo.connect('mongodb://user:zaizai@ds139735.mlab.com:39735/imgsrc', function(err, db) {
         if (err) throw err;
@@ -16,7 +14,5 @@ app.use(function(req, res){
         });
     });
 });
-                
-app.listen(port, function() {
-  console.log('Server listening on ' + port);
-});
+
+module.exports = router;

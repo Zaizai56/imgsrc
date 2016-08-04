@@ -1,17 +1,13 @@
-var express = require("express");
-var app = express();
-var mongo = require('mongodb').MongoClient;
-var request = require("request");
-//this is the standard google search with my API key
-var googleApi = "https://www.googleapis.com/customsearch/v1?cx=017568103372503135883%3Auxsdz2zrxry&alt=json&searchType=image&key=AIzaSyCyRNyaQ6C_g8tXTeiMFgqARe8SQC3E63E";
+var express = require("express"),
+  router = express.Router(),
+  mongo = require('mongodb').MongoClient,
+  request = require("request");
 
-var port = process.env.PORT || 8080; // set our port
-
-app.use(express.static(__dirname + "/public"));
-
-app.get('/:url', function(req, res){
+router.use(function(req, res){
+  var googleApi = "https://www.googleapis.com/customsearch/v1?cx=017568103372503135883%3Auxsdz2zrxry&alt=json&searchType=image&key=AIzaSyCyRNyaQ6C_g8tXTeiMFgqARe8SQC3E63E";
   console.log("new search");
   var searchterm = req.path.substring(1);
+  if (searchterm != ""){
   var offset = "";
   if (req.query.offset != null){
     console.log("no offset");
@@ -47,8 +43,7 @@ app.get('/:url', function(req, res){
         console.log("replied");
       }
     });
+  } else res.send("empty research string");
 });
 
-app.listen(port, function() {
-  console.log('Server listening on ' + port);
-});
+module.exports = router;
