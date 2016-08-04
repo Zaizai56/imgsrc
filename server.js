@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var router = express.Router();
 
-app.use('/index', express.static(process.cwd() + '/public'));
+app.use('/', express.static(process.cwd() + '/public'));
 app.use('/', router);
 router.use('/src', require('./src'));
 router.use('/history_src', require('./src_history'));
