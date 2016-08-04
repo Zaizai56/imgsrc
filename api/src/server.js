@@ -7,7 +7,7 @@ var googleApi = "https://www.googleapis.com/customsearch/v1?cx=01756810337250313
 
 var port = process.env.PORT || 8080; // set our port
 
-app.use(express.static(__dirname + "/app/public"));
+app.use(express.static(__dirname + "/public"));
 
 app.get('/:url', function(req, res){
   console.log("new search");
