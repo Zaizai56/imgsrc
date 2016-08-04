@@ -1,0 +1,223 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'request' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /home/ubuntu/workspace/imgsrc/package.json
+5 warn package.json imgsrc@0.0.1 No repository field.
+6 warn package.json imgsrc@0.0.1 No README data
+7 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/imgsrc/node_modules/express/package.json
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/imgsrc/node_modules/mongodb/package.json
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/imgsrc/node_modules/request/package.json
+10 verbose readDependencies loading dependencies from /home/ubuntu/workspace/imgsrc/package.json
+11 verbose install request is installed as 2.74.0
+12 silly cache add args [ 'request@^2.74.5', null ]
+13 verbose cache add spec request@^2.74.5
+14 silly cache add parsed spec Result {
+14 silly cache add   raw: 'request@^2.74.5',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'request',
+14 silly cache add   rawSpec: '^2.74.5',
+14 silly cache add   spec: '>=2.74.5 <3.0.0',
+14 silly cache add   type: 'range' }
+15 silly addNamed request@>=2.74.5 <3.0.0
+16 verbose addNamed ">=2.74.5 <3.0.0" is a valid semver range for request
+17 silly addNameRange { name: 'request', range: '>=2.74.5 <3.0.0', hasData: false }
+18 silly mapToRegistry name request
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry data Result {
+21 silly mapToRegistry   raw: 'request',
+21 silly mapToRegistry   scope: null,
+21 silly mapToRegistry   name: 'request',
+21 silly mapToRegistry   rawSpec: '',
+21 silly mapToRegistry   spec: 'latest',
+21 silly mapToRegistry   type: 'tag' }
+22 silly mapToRegistry uri https://registry.npmjs.org/request
+23 verbose addNameRange registry:https://registry.npmjs.org/request not in flight; fetching
+24 verbose request uri https://registry.npmjs.org/request
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 11:32:02 AM
+27 verbose request id 8168b1995f32f41f
+28 verbose etag "80MGYVDGZSQY9VU7Q2TJ1DQ6W"
+29 http request GET https://registry.npmjs.org/request
+30 http 200 https://registry.npmjs.org/request
+31 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   etag: '"95NT2VGLA8VPIKMFQA0N0W2EM"',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'content-length': '36849',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Thu, 04 Aug 2016 11:32:03 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '221',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-hkg6822-HKG',
+31 verbose headers   'x-cache': 'HIT',
+31 verbose headers   'x-cache-hits': '11',
+31 verbose headers   'x-timer': 'S1470310323.030539,VS0,VE0',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 200,
+32 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 silly get     etag: '"95NT2VGLA8VPIKMFQA0N0W2EM"',
+32 silly get     'content-type': 'application/json',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'content-length': '36849',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Thu, 04 Aug 2016 11:32:03 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     age: '221',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-hkg6822-HKG',
+32 silly get     'x-cache': 'HIT',
+32 silly get     'x-cache-hits': '11',
+32 silly get     'x-timer': 'S1470310323.030539,VS0,VE0',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose get saving request to /home/ubuntu/.npm/registry.npmjs.org/request/.cache.json
+34 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+35 silly addNameRange number 2 { name: 'request', range: '>=2.74.5 <3.0.0', hasData: true }
+36 silly addNameRange versions [ 'request',
+36 silly addNameRange   [ '0.10.0',
+36 silly addNameRange     '0.8.3',
+36 silly addNameRange     '0.9.0',
+36 silly addNameRange     '0.9.1',
+36 silly addNameRange     '0.9.5',
+36 silly addNameRange     '1.0.0',
+36 silly addNameRange     '1.1.0',
+36 silly addNameRange     '1.1.1',
+36 silly addNameRange     '1.2.0',
+36 silly addNameRange     '1.9.0',
+36 silly addNameRange     '1.9.1',
+36 silly addNameRange     '1.9.2',
+36 silly addNameRange     '1.9.3',
+36 silly addNameRange     '1.9.5',
+36 silly addNameRange     '1.9.7',
+36 silly addNameRange     '1.9.8',
+36 silly addNameRange     '1.9.9',
+36 silly addNameRange     '2.0.0',
+36 silly addNameRange     '2.0.1',
+36 silly addNameRange     '2.0.2',
+36 silly addNameRange     '2.0.3',
+36 silly addNameRange     '2.0.4',
+36 silly addNameRange     '2.0.5',
+36 silly addNameRange     '2.1.0',
+36 silly addNameRange     '2.1.1',
+36 silly addNameRange     '2.2.0',
+36 silly addNameRange     '2.2.5',
+36 silly addNameRange     '2.2.6',
+36 silly addNameRange     '2.2.9',
+36 silly addNameRange     '2.9.0',
+36 silly addNameRange     '2.9.1',
+36 silly addNameRange     '2.9.2',
+36 silly addNameRange     '2.9.3',
+36 silly addNameRange     '2.9.100',
+36 silly addNameRange     '2.9.150',
+36 silly addNameRange     '2.9.151',
+36 silly addNameRange     '2.9.152',
+36 silly addNameRange     '2.9.153',
+36 silly addNameRange     '2.9.200',
+36 silly addNameRange     '2.9.201',
+36 silly addNameRange     '2.9.202',
+36 silly addNameRange     '2.9.203',
+36 silly addNameRange     '2.10.0',
+36 silly addNameRange     '2.11.0',
+36 silly addNameRange     '2.11.1',
+36 silly addNameRange     '2.11.2',
+36 silly addNameRange     '2.11.3',
+36 silly addNameRange     '2.11.4',
+36 silly addNameRange     '2.12.0',
+36 silly addNameRange     '2.14.0',
+36 silly addNameRange     '2.16.0',
+36 silly addNameRange     '2.16.2',
+36 silly addNameRange     '2.16.4',
+36 silly addNameRange     '2.16.6',
+36 silly addNameRange     '2.18.0',
+36 silly addNameRange     '2.19.0',
+36 silly addNameRange     '2.20.0',
+36 silly addNameRange     '2.21.0',
+36 silly addNameRange     '2.22.0',
+36 silly addNameRange     '2.23.0',
+36 silly addNameRange     '2.24.0',
+36 silly addNameRange     '2.25.0',
+36 silly addNameRange     '2.26.0',
+36 silly addNameRange     '2.27.0',
+36 silly addNameRange     '2.28.0',
+36 silly addNameRange     '2.29.0',
+36 silly addNameRange     '2.30.0',
+36 silly addNameRange     '2.31.0',
+36 silly addNameRange     '2.32.0',
+36 silly addNameRange     '2.33.0',
+36 silly addNameRange     '2.34.0',
+36 silly addNameRange     '2.35.0',
+36 silly addNameRange     '2.36.0',
+36 silly addNameRange     '2.37.0',
+36 silly addNameRange     '2.38.0',
+36 silly addNameRange     '2.39.0',
+36 silly addNameRange     '2.40.0',
+36 silly addNameRange     '2.41.0',
+36 silly addNameRange     '2.42.0',
+36 silly addNameRange     '2.43.0',
+36 silly addNameRange     '2.44.0',
+36 silly addNameRange     '2.45.0',
+36 silly addNameRange     '2.46.0',
+36 silly addNameRange     '2.47.0',
+36 silly addNameRange     '2.48.0',
+36 silly addNameRange     '2.49.0',
+36 silly addNameRange     '2.50.0',
+36 silly addNameRange     '2.51.0',
+36 silly addNameRange     '2.52.0',
+36 silly addNameRange     '2.53.0',
+36 silly addNameRange     '2.54.0',
+36 silly addNameRange     '2.55.0',
+36 silly addNameRange     '2.56.0',
+36 silly addNameRange     '2.57.0',
+36 silly addNameRange     '2.58.0',
+36 silly addNameRange     '2.59.0',
+36 silly addNameRange     '2.60.0',
+36 silly addNameRange     '2.61.0',
+36 silly addNameRange     '2.62.0',
+36 silly addNameRange     '2.63.0',
+36 silly addNameRange     '2.64.0',
+36 silly addNameRange     '2.65.0',
+36 silly addNameRange     '2.66.0',
+36 silly addNameRange     '2.67.0',
+36 silly addNameRange     '2.68.0',
+36 silly addNameRange     '2.69.0',
+36 silly addNameRange     '2.70.0',
+36 silly addNameRange     '2.71.0',
+36 silly addNameRange     '2.72.0',
+36 silly addNameRange     '2.73.0',
+36 silly addNameRange     '2.74.0' ] ]
+37 verbose stack Error: No compatible version found: request@'>=2.74.5 <3.0.0'
+37 verbose stack Valid install targets:
+37 verbose stack ["0.10.0","0.8.3","0.9.0","0.9.1","0.9.5","1.0.0","1.1.0","1.1.1","1.2.0","1.9.0","1.9.1","1.9.2","1.9.3","1.9.5","1.9.7","1.9.8","1.9.9","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4","2.0.5","2.1.0","2.1.1","2.2.0","2.2.5","2.2.6","2.2.9","2.9.0","2.9.1","2.9.2","2.9.3","2.9.100","2.9.150","2.9.151","2.9.152","2.9.153","2.9.200","2.9.201","2.9.202","2.9.203","2.10.0","2.11.0","2.11.1","2.11.2","2.11.3","2.11.4","2.12.0","2.14.0","2.16.0","2.16.2","2.16.4","2.16.6","2.18.0","2.19.0","2.20.0","2.21.0","2.22.0","2.23.0","2.24.0","2.25.0","2.26.0","2.27.0","2.28.0","2.29.0","2.30.0","2.31.0","2.32.0","2.33.0","2.34.0","2.35.0","2.36.0","2.37.0","2.38.0","2.39.0","2.40.0","2.41.0","2.42.0","2.43.0","2.44.0","2.45.0","2.46.0","2.47.0","2.48.0","2.49.0","2.50.0","2.51.0","2.52.0","2.53.0","2.54.0","2.55.0","2.56.0","2.57.0","2.58.0","2.59.0","2.60.0","2.61.0","2.62.0","2.63.0","2.64.0","2.65.0","2.66.0","2.67.0","2.68.0","2.69.0","2.70.0","2.71.0","2.72.0","2.73.0","2.74.0"]
+37 verbose stack
+37 verbose stack     at installTargetsError (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/cache/add-named.js:284:12)
+37 verbose stack     at next (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/cache/add-named.js:262:19)
+37 verbose stack     at setData (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/cache/add-named.js:236:5)
+37 verbose stack     at RES (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+37 verbose stack     at f (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/once/once.js:17:25)
+37 verbose stack     at fixName (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/cache/add-named.js:29:5)
+37 verbose stack     at saved (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/cache/caching-client.js:173:7)
+37 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+37 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+38 verbose cwd /home/ubuntu/workspace/imgsrc
+39 error Linux 4.2.0-c9
+40 error argv "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm" "install" "request"
+41 error node v4.4.5
+42 error npm  v2.15.5
+43 error code ETARGET
+44 error notarget No compatible version found: request@'>=2.74.5 <3.0.0'
+44 error notarget Valid install targets:
+44 error notarget ["0.10.0","0.8.3","0.9.0","0.9.1","0.9.5","1.0.0","1.1.0","1.1.1","1.2.0","1.9.0","1.9.1","1.9.2","1.9.3","1.9.5","1.9.7","1.9.8","1.9.9","2.0.0","2.0.1","2.0.2","2.0.3","2.0.4","2.0.5","2.1.0","2.1.1","2.2.0","2.2.5","2.2.6","2.2.9","2.9.0","2.9.1","2.9.2","2.9.3","2.9.100","2.9.150","2.9.151","2.9.152","2.9.153","2.9.200","2.9.201","2.9.202","2.9.203","2.10.0","2.11.0","2.11.1","2.11.2","2.11.3","2.11.4","2.12.0","2.14.0","2.16.0","2.16.2","2.16.4","2.16.6","2.18.0","2.19.0","2.20.0","2.21.0","2.22.0","2.23.0","2.24.0","2.25.0","2.26.0","2.27.0","2.28.0","2.29.0","2.30.0","2.31.0","2.32.0","2.33.0","2.34.0","2.35.0","2.36.0","2.37.0","2.38.0","2.39.0","2.40.0","2.41.0","2.42.0","2.43.0","2.44.0","2.45.0","2.46.0","2.47.0","2.48.0","2.49.0","2.50.0","2.51.0","2.52.0","2.53.0","2.54.0","2.55.0","2.56.0","2.57.0","2.58.0","2.59.0","2.60.0","2.61.0","2.62.0","2.63.0","2.64.0","2.65.0","2.66.0","2.67.0","2.68.0","2.69.0","2.70.0","2.71.0","2.72.0","2.73.0","2.74.0"]
+44 error notarget
+44 error notarget This is most likely not a problem with npm itself.
+44 error notarget In most cases you or one of your dependencies are requesting
+44 error notarget a package version that doesn't exist.
+44 error notarget
+44 error notarget It was specified as a dependency of 'imgsrc'
+45 verbose exit [ 1, true ]
