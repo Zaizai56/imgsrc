@@ -10,8 +10,8 @@ router.use(function(req, res){
   if (searchterm != ""){
   var offset = "";
   if (req.query.offset != null){
-    console.log("no offset");
-    offset = "&num=" + req.query.offset;
+    console.log("search with offset");
+    offset = "&start=" + req.query.offset;
   }
   var path = googleApi + offset + "&q=" + searchterm; //build the search complete url
   console.log(path);
@@ -23,6 +23,7 @@ router.use(function(req, res){
       var i;
       console.log("google replied");
       for (i=0;i<10;i++){
+        console.log(i);
         var url = data.items[i].link;
         var snippet = data.items[i].title;
         var thumbnail = data.items[i].image.thumbnailLink;
