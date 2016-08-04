@@ -1,7 +1,6 @@
 var express = require("express");
 var app = express();
 var mongo = require('mongodb').MongoClient;
-var https = require('https');
 var request = require("request");
 //this is the standard google search with my API key
 var googleApi = "https://www.googleapis.com/customsearch/v1?cx=017568103372503135883%3Auxsdz2zrxry&alt=json&searchType=image&key=AIzaSyCyRNyaQ6C_g8tXTeiMFgqARe8SQC3E63E";
